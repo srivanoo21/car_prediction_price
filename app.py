@@ -28,7 +28,7 @@ def predict():
         Present_Price=float(request.form('Present_Price'))
         Kms_Driven = int(request.form('Kms_Driven'))
         Owner = int(request.form('Owner'))
-        Fuel_Type_Petrol = request.form()'Fuel_Type_Petrol')
+        Fuel_Type_Petrol = request.form('Fuel_Type_Petrol')
         if (Fuel_Type_Petrol=='Petrol'):
             Fuel_Type_Petrol = 1
             Fuel_Type_Diesel = 0
