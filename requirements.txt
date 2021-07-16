@@ -1,0 +1,5 @@
+certifi==2021.5.30
+missingno==0.4.2
+mlxtend==0.17.2
+pydotplus==2.0.2
+wincertstore==0.2
