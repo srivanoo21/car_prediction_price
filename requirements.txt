@@ -18,7 +18,6 @@ pydotplus==2.0.2
 requests==2.26.0
 scikit-learn==0.24.2
 scipy==1.7.0
-setuptools==52.0.0.post20210125
 sklearn==0.0
 threadpoolctl==2.2.0
 typing-extensions==3.10.0.0
