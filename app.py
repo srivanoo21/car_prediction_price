@@ -24,11 +24,11 @@ standard_to = StandardScaler()
 def predict():
     Fuel_Type_Diesel=0
     if request.method == 'POST':
-        Year = int(request.form('Year'))
-        Present_Price=float(request.form('Present_Price'))
-        Kms_Driven = int(request.form('Kms_Driven'))
-        Owner = int(request.form('Owner'))
-        Fuel_Type_Petrol = request.form('Fuel_Type_Petrol')
+        Year = int(request.form['Year'])
+        Present_Price=float(request.form['Present_Price'])
+        Kms_Driven = int(request.form['Kms_Driven'])
+        Owner = int(request.form['Owner'])
+        Fuel_Type_Petrol = request.form['Fuel_Type_Petrol']
         if (Fuel_Type_Petrol=='Petrol'):
             Fuel_Type_Petrol = 1
             Fuel_Type_Diesel = 0
@@ -39,12 +39,12 @@ def predict():
             Fuel_Type_Petrol = 0
             Fuel_Type_Diesel = 0 
         Year = 2020-Year
-        Seller_Type_Individual=request.form('Seller_Typ_Individual')
+        Seller_Type_Individual=request.form['Seller_Typ_Individual']
         if (Seller_Type_Individual=='Individual'):
             Seller_Type_Individual = 1
         else:
             Seller_Type_Individual = 0
-        Transmission_Manual = request.form('Transmission_Manual')
+        Transmission_Manual = request.form['Transmission_Manual']
         if (Transmission_Manual=='Manual'):
             Transmission_Manual = 1
         else:
